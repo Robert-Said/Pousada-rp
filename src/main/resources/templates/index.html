@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pousada Itaretama é uma pousada localizada no interior do Rio Grande do Norte na cidade turistica
+     Lajes do Cabugi, onde antigamente se chamava Itaretama, e está desde 2021 trazendo conforto e hospitalidade à todos. ">
+    <link rel="shotcut icon" href="img/itaretama-png.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scrip.js"></script>
+    <title>Pousada Itaretama</title>
+</head>
+<body>
+    
+    <div id="menu" class="menu">
+        <nav>
+            <button onclick="menuMostrar('menu')">
+                <i class='bx bx-x'></i>
+            </button>
+            <a onclick="menuMostrar('menu')" title="Inicio" href="#">INICIO</a>
+            <a onclick="menuMostrar('menu')" title="sobre" href="#sobre">SOBRE</a>
+            <a onclick="menuMostrar('menu')" title="Quartos" href="#quartos">QUARTOS</a>
+            <a onclick="menuMostrar('menu')" title="Serviços" href="#servicos">SERVIÇOS</a>
+            <a onclick="menuMostrar('menu')" title="Galeria" href="#galeria">GALERIA</a>
+            <a onclick="menuMostrar('menu')" title="Contatos" href="#contatos">CONTATO</a>
+            <a onclick="menuMostrar('menu')" title="Mapa" href="#mapa">MAPA</a>
+        </nav>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <a class="icon_30px" href="#"><img  width="30px" height="30px" src="img/itaretama-png.png" alt="logo itaretama"></a>
+            <img class="icon_50px" width="50px" height="50px" style="cursor: default;" src="img/itaretama-png.png" alt=" logo itaretama">
+            <button onclick="menuMostrar('menu')" style="background: none; border: none;">
+                <img class="menu_hamburguer" src="img/bx-menu (1).png" style="height: 30px; width: 30px;" alt="menu">
+            </button>
+            
+            <a title="Inicio" href="#">INICIO</a>
+            <a title="sobre" href="#sobre">SOBRE</a>
+            <a title="Quartos" href="#quartos">QUARTOS</a>
+            <a title="Serviços" href="#servicos">SERVIÇOS</a>
+            <a title="Galeria" href="#galeria">GALERIA</a>
+            <a title="Contatos" href="#contatos">CONTATO</a>
+            <a title="Mapa" href="#mapa">MAPA</a>
+        </nav>
+    </header>
+    
+        <div class="menu_duvidas" id="menu_duvidas">
+            <section class="menu_duvidas_container">
+                <h1>FAQ</h1>
+                <span>♢</span>
+                <hr><span class="spn">Wi-Fi grátis</span><hr>
+                <span class="spn">Diárias a partir de R$80,00</span><hr>
+                <span class="spn">Café da manha incluso na diária</span><hr>
+                <span class="spn">Serviço de quarto é cobrado a parte</span><hr>
+                <span class="spn">Aceitamos todos os tipos de pagamento</span><hr>
+                
+            </section>
+        </div>
+    
+    <main>
+       
+        
+        <aside class="aside">
+                <a href="api.whatsapp.com/send/?phone=5584999207333" target="_blank">
+                    <section class="aside_container_whatsapp">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </section>
+                </a>
+                <button style="border: none;" title="Duvidas Frequentes" onclick="menuDuvidas('menu_duvidas')">
+                    <section class="aside_container_info">
+                        <i class='bx bx-info-circle' ></i>
+                    </section>
+                </button>
+                
+                <button title="Modo Escuro" style="border: none;"onclick="darkMode()">
+                    <section class="aside_container_mode">
+                        <i class='bx bx-moon' ></i>
+                    </section>
+                </button>
+            </aside>
+        <div class="main_container">
+        
+            <section class="container_titulos">
+                <div class="pousada_titulo">
+                  <hr><span>pousada</span><hr>
+                </div>
+                <h1>I T A R E T A M A</h1>
+                <nav class="contact_nav">
+                    <a href="tel:+558499920-7333"><i class='bx bx-phone-call'></i></a>
+                    <a href="api.whatsapp.com/send/?phone=5584999207333" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="www.instagram.com.br/pousadaitaretama" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="mailto:pousadaitaretama@gmail.com" target="_blank"><i class='bx bx-envelope' ></i></a>
+                </nav>
+            </section>
+            <section class="imagem_inicial">
+                <img src="img/principal.jpg" alt="Imagem Principal">
+            </section>
+            
+            <div class="target" id="sobre"></div>
+            
+            
+            <section class="sobre">
+                <h1>SOBRE</h1>
+                <p style="line-height:1.5em; text-align:center; font-size:18px;"> 
+                    Estamos localizados em Lajes - região central do Rio Grande do Norte. Porém, nossa cidade já se chamou Itaretama, que tem como significado região de pedras.Isso ocorreu na década de 1940. Então, decidimos por chamar nossa pousada de Itaretama, em homenagem a Lajes. 
+                </p>
+            </section>
+            
+            
+            <div class="target" id="quartos"></div>
+            <section class="quartos">
+                <div class="quartos_container">
+                   <h2>NOSSOS QUARTOS</h2>
+                   <p>Está a procura de uma hospedagem?</p>
+                   <p>Temos uma grande variedade de quartos, tanto para solteiros quanto para casais</p>
+                   <a class="btn_reservar" href="api.whatsapp.com/send/?phone=5584999207333" target="_blank"><span>RESERVAR</span></a>
+                </div>
+            </section>
+            
+            
+            <div class="target" id="servicos"></div>
+            <section class="servicos">
+                <div class="servicos_txt_container">
+                    <h1>NOSSOS SERVIÇOS</h1>
+                </div>
+                <div class="servicos_img_container">
+                    <section class="img_info">
+                        <img id="xicara" src="img/xicara-png.png" alt="Café da manhã icone">
+                        <h1>Café da Manhã</h1>
+                        <p>Café da manhã disponivel até às 09:00h</p>
+                    </section >
+                    <section class="img_info">
+                        <img id="wifi" src="img/wifi.png" alt="Wi-fi icone">
+                        <h1>Wi-Fi Grátis</h1>
+                        <p>Wi-Fi totalmente grátis</p>
+                    </section>
+                    <section class="img_info">
+                        <img id="prato" src="img/prato.png" alt=" Prato icone">
+                        <h1>Serviço de Quarto</h1>
+                        <p>Serviços de quarto a qualquer hora</p>
+                    </section>
+                </div>
+            </section>
+            
+            
+            <div class="target" id="galeria"></div>
+            <section class="galeria">
+                <div class="galeria_titulo_container">
+                    <h1>GALERIA</h1>
+                </div>
+                <div class="galeria_fotos_container">
+                    <img class="galeria_img" id="galeria_img1" src="https://lh5.googleusercontent.com/p/AF1QipMyZ-TsqOOx72h7-mhav7_OVL7VnfDhZjAhQib4=w203-h203-k-no" alt="Imagem Banheiro">
+                    <img class="galeria_img" id="galeria_img2" src="https://lh5.googleusercontent.com/p/AF1QipP-nslZ0Et2VjGhzPwCthyfC5tztWadJD9TvJLe=s338-k-no" alt="Imagem Corredores">
+                    <img class="galeria_img" id="galeria_img3" src="https://lh5.googleusercontent.com/p/AF1QipMoCaEtnPAHJeZo2k8uP-NJ_TCiVwhv8tuiykvC=w203-h152-k-no" alt="Imagem Salão">
+                    <img class="galeria_img" id="galeria_img4" src="https://lh5.googleusercontent.com/p/AF1QipNZ-oFLEBfbTfqlo53lD5iwQuW4mQ8sfrIEpucX=w203-h152-k-no" alt="Imagem Quarto">
+                </div>
+            </section>
+            <div class="target" id="contatos"></div>
+            <section class="contatos">
+                <div class="contatos_title">
+                    <h1>FALE CONOSCO</h1>
+                </div>
+                <div class="contatos_info">
+                    <a href="mailto:pousadaitaretama@gmail.com" target="_blank">pousadaitaretama@gmail.com</a>
+                    <p>Av. Jaime Fernandes de Oliveira</p>
+                    <a href="tel:+558499920-7333">(84)99920-7333</i></a>
+                </div>
+            </section>
+            <div class="target" id="mapa"></div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15880.29342631006!2d-36.2369881!3d-5.7025422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbabe227fc9a6703!2sPousada%20Itaretama!5e0!3m2!1spt-BR!2sbr!4v1648684614606!5m2!1spt-BR!2sbr" width="100%" height="510px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <footer>
+                <span>copyright © 2022 por Robert Said</span>
+            </footer>
+        </div>
+    </main>
+    
+  
+</body>
+</html>

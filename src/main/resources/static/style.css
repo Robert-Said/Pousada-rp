@@ -1,0 +1,743 @@
+/*PALETA DE CORES 
+
+    #242323 - Cinza
+    #fff - branco
+    #0000 - preto
+
+
+ FONTES
+
+    font-family: 'Raleway', sans-serif;
+        variação com weight
+    font-family: 'Caveat', cursive; - arrumadinha
+    font-family: 'Josefin Sans', sans-serif;
+    
+*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Josefin+Sans:wght@300&family=Raleway:ital,wght@0,100;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    animation: aparecer .4s;
+}
+
+.temp{
+    height: 500px;
+    width: 100%;
+}
+.target{
+    width: 100%;
+    height: 50px;
+}
+
+/*seçoes flutuantes*/
+/*MENU SOBRE===================================================================================================================================*/
+
+.menu_duvidas{
+    width: 50%;
+    left: 15%;
+    position: fixed;
+    bottom: 35rem;
+    display: none;
+    transition: ease-in;
+    animation: aparecer .4s;
+    
+}
+.menu_duvidas_container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background-color: rgb(47, 49, 49);
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    
+}
+.menu_duvidas_container .spn::before{
+    content: '♢     ';
+}
+.menu_duvidas_container span{
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.menu_duvidas_container h1{
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/*CABEÇALHO ================================================================================================================================*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #242323;
+    display: flex;
+    justify-content: center;
+    
+}
+.contact_nav{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    align-items: center;
+    border-radius: 4rem;
+}
+.contact_nav a{
+    color: black;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_nav a:hover{
+    background-color: rgb(133, 133, 133);
+    height: 30px;
+    width: 30px;
+    border-radius: 4rem;
+    transition: .4s;
+}
+
+.nav{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    background-color: rgba(71, 71, 71, 0.9);
+    border-radius: 4rem;
+    margin-top: 5px;
+}
+.nav .menu_hamburguer{
+    display: none;
+}
+.nav .icon_30px{
+    display: none;
+}
+.nav img{
+    cursor:pointer
+}
+.nav a{
+    color:  white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.nav a:hover{
+    color: orange;
+    font-weight: bold;
+    transition: .3;
+}
+
+/*MAIN ====================================================================================================================================*/
+
+/*MENU*/
+.menu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    flex-direction: column;
+    display: none;
+    animation: aparecer .4s;
+}
+.menu nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed ;
+    font-size: 20px;
+    
+}
+.menu nav a{
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.menu nav button{
+    margin-bottom: 50px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu nav button:hover{
+    background-color: rgb(158, 158, 158);
+}
+
+
+
+/*MODO ESCURO ================================================================================================================================*/
+.dark_mode_body .nav{
+    background-color: rgba(134, 134, 134, 0.8);
+    animation: aparecer 1.0s;
+}
+.dark_mode_body .nav a{
+    color: black;
+    font-weight: bold;
+    animation: aparecer .5s;
+}
+.dark_mode_body .pousada_titulo hr{
+    background-color: white;
+}
+.dark_mode_body .nav a:hover{
+    color: yellowgreen;
+}
+.dark_mode_body .header{
+    background-color: rgb(49, 48, 48);
+    animation: aparecer .5s;
+}
+
+.dark_mode_body {
+    background-color:#212226 ;
+    color: rgb(182, 180, 180);
+    animation: aparecer .5s;
+}
+.dark_mode_body body{
+    animation: aparecer .5s;
+}
+.dark_mode_body a, 
+.dark_mode_body p, 
+.dark_mode_body span {
+    color: rgb(182, 180, 180);;
+    animation: aparecer .5s;
+}
+.dark_mode_body section p,
+.dark_mode_body section a,
+.dark_mode_body section span{
+    color: rgb(182, 180, 180);;
+    animation: aparecer .5s;
+}
+
+.dark_mode_body aside a,
+.dark_mode_body aside i{
+    color: rgb(182, 180, 180);;
+    animation: aparecer .5s;
+
+}
+.dark_mode_body .quartos_container{
+    background-color:rgba(255, 255, 255, 0.8) ;
+    animation: aparecer .5s;
+}
+.dark_mode_body .quartos_container p,
+.dark_mode_body .quartos_container h2{
+       color: black;
+       animation: aparecer 1s;
+}
+.dark_mode_body .contatos{
+    border: solid 1px white;
+    animation: aparecer 1s;
+}
+
+.dark_mode_body footer{
+       background-color: rgb(99, 98, 98);
+       animation: aparecer 1s;
+}
+.dark_mode_body footer span{
+    color: white;
+    animation: aparecer 1s;
+}
+/*=============================================================================================================================================*/
+
+
+.main{
+    width: 100%;
+    height: 8000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_container{
+    width: 70%;
+    margin-left: 15%;
+    align-items: center;
+    height: 1000px;
+}
+.container_titulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+}
+
+.pousada_titulo {
+    display: flex;
+    align-items: center;
+}
+  .pousada_titulo hr {
+    border: none;
+    background-color: black;
+    margin-left: .1em;
+    width: 30px;
+    height: 1px;
+    margin-right: 7px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.container_titulos span{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    
+}
+
+.container_titulos h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.imagem_inicial img{
+    width: 100%;
+}
+/*ASIDE ======================================================================================================================================*/
+.aside{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    
+    
+}
+.aside_container_mode{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(110, 112, 112, 0.5);
+    position: fixed;
+    bottom: 5rem;
+    left: 92%;
+    border-radius: 50%;
+}
+.aside_container_whatsapp{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(110, 112, 112, 0.5);
+    position: fixed;
+    bottom: 10rem;
+    left: 92%;
+    border-radius: 50%;
+}
+.aside_container_info{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(110, 112, 112, 0.5);
+    position: fixed;
+    bottom: 15rem;
+    left: 92%;
+    border-radius: 50%;
+}
+.aside section:hover{
+    background-color:rgba(64, 65, 65, 0.5);
+    cursor:pointer;
+    transition: .5s;
+}
+.aside a{
+    color: black;
+}
+
+/*SOBRE =======================================================================================================================================*/
+.sobre{
+    height: 500px;
+    display: flex;
+    width: 60%;
+    max-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 21%;
+    text-align: center;
+    
+}
+.sobre h1{
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+}
+.sobre p{
+    color: rgb(0, 0, 0);
+    font-family: 'Indie Flower', cursive;   
+}
+
+/*QUARTOS ======================================================================================================================================*/
+
+.quartos{
+    width: 100%;
+    height: 600px;
+    background-color: #242323;
+    display: flex;
+    background-image: url(img/quarto-img.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.quartos_container{
+    height: 45%;
+    width: 45%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-left: 28%;
+    flex-direction: column;
+}
+.quartos_container h2{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 25px;
+}
+.quartos_container p{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 18px;
+}
+.quartos_container a{
+    height: 50px;
+    width: 50%;
+    border: solid 1px black;
+    text-decoration: none;
+    display: flex;
+    margin-top: 20px;
+}
+.quartos_container a span{
+    text-align: center;
+    align-items: center;
+    color: black;
+    display: flex;
+    margin-left: 31%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.quartos_container a:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: .8s;
+}
+.quartos_container a:hover span{
+    color: white;
+    font-weight:bolder ;
+    transition: .8s;
+}
+
+/*SERVIÇOS =====================================================================================================================================*/
+.servicos{
+    margin-top: 100px;
+    width: 100%;
+    height: autopx;
+    display: flex;
+    flex-direction: column;
+}
+.servicos_txt_container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicos_txt_container h1{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
+}
+.servicos_img_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+
+}
+.servicos_img_container img{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+
+}
+.img_info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_info h1{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.img_info p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(61, 60, 60);
+    font-weight: 620;
+}
+/*GALERIA =========================================================================================================================================*/
+.galeria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.galeria_titulo_container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+.galeria_fotos_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.galeria_fotos_container img{
+    width: 406px;
+    height: auto;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*CONTATOS ========================================================================================================================================*/
+.contatos{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: solid 1px black;
+    align-items: center;
+    text-align: center;
+}
+.contatos_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.contatos_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+
+}
+.contatos_info p, .contatos_info a{
+    margin-top: 25px;
+    color: black;
+}
+
+.contatos_info p{
+    font-size: 15px;
+}
+/*MAPA ========================================================================================================================================*/
+.mapa{
+    width: 100%;
+    /* height: 510px;  */
+    height: auto;
+    border: solid 1px black;
+}
+
+/*FOTER =======================================================================================================================================*/
+footer{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 4rem;
+    margin-bottom: 5px;
+}
+footer span{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*ANIMAÇÕES====================================================================================================================================*/
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/*MEDIA QUERY =================================================================================================================================*/
+
+@media screen and (max-width:999px) {
+    /*HEADER*/
+    .nav .icon_50px, .nav a{
+        display: none;
+    }
+    .nav .icon_30px{
+        display: block;
+        margin-top: 5px;
+    }
+    .nav .menu_hamburguer{
+        display: block;
+    }
+    .nav{
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .contact_nav{
+        width: 25%;
+    }
+    /*MAIN*/
+    .quartos_container{
+        width: 75%;
+        margin-left: 13%;
+    }
+    .quartos_container{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .servicos_img_container{
+        flex-direction: column;
+        
+    }
+    .servicos_img_container img{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width:620px) {
+    
+    .quartos_container a span{
+        margin-left: 25%;
+    }
+    
+    .quartos_container{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .contact_nav{
+        width: 45%;
+    }
+    .nav{
+        margin-top: 10px;
+    }
+    .aside_container_mode{
+        left: 90%;
+    }
+    .aside_container_whatsapp{
+        left: 90%;
+    }
+    .aside_container_info{
+        left: 90%;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .container_titulos h1{
+        font-size: 30px;
+    }
+    .contact_nav{
+        width: 35%;
+    }
+    .quartos_container a span{
+        margin-left: 19%;
+    }
+    .aside .aside_container_whatsapp,
+    .aside .aside_container_info{
+        display: none;
+    }
+    .aside .aside_container_mode{
+       /* left: 86%;
+       bottom: 38rem; */
+       left: 86%;
+       bottom: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:436px) {
+    .contatos_title{
+        font-size: 12px;
+    }
+    .contatos_info a, .contatos_info p{
+        font-size: 12px;
+    }
+    .contact_nav{
+        width: 55%;
+    }
+    .quartos_container a span{
+        margin-left: 19%;
+    }
+    footer span{
+        font-size: 12px;
+    }
+    .quartos_container p{
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width:380px) {
+    footer span{
+        font-size: 10px;
+    }
+}
+
+
+
